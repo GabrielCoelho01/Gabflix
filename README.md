@@ -5,7 +5,7 @@
 
 ## ❓- O que é o GABFLIX?
 
-**Gabflix** é um projeto cujo principal intuito é aprender o processo por trás da criação de um site, desde o frontend até o backend, o site será um recomendador de filmes, onde diversas opções poderão ser adicionadas para filtrar o estilo de filme que o usuário deseja assistir, como gênero, nota do IMDB, etc. Mas o projeto não para por ai, planejamos fazer uma espécie de rede-social, onde o usuário poderá, em sua conta, criar listas de filmes que deseja assistir e adicionar seus amigos.
+**Gabflix** é um projeto cujo principal intuito é aprender o processo por trás do desenvolvimento web, desde o frontend até o backend, o site será um recomendador de filmes, onde diversas opções poderão ser adicionadas para filtrar o estilo de filme que o usuário deseja assistir, como gênero, nota do IMDB, etc. Mas o projeto não para por ai, planejamos fazer uma espécie de rede-social, onde o usuário poderá, em sua conta, criar listas de filmes que deseja assistir e adicionar seus amigos.
 
 ## 👤- Equipe: 
 

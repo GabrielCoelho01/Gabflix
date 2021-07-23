@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="carousel.css" rel="stylesheet" />
 
     <title>Gabflix!</title>
 </head>
 <body>
     <header>
-        <div class="center">
+        <nav class="center">
 
             <div class="menu">
 
                 <div class="logo">
-                    <img src="logo.png">
+                    <img src="images/logo.png">
                 </div> <!--logo-->
-
                 <div class="menu-items">
-                    <a href="">Home</a>
-                    <a href="">Minha lista</a>
-                    <a href="">Gêneros</a>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Minha lista</a></li>
+                        <li><a href="/">Gêneros</a></li>
+                    </ul> 
                 </div> <!--menu-itens-->
             </div> <!--menu-->
+
 
             <div class="search">
                 <div class="input-search">
@@ -33,13 +36,49 @@
                 </div> <!--input-search-->
             </div> <!--search-->
 
-        </div> <!--center-->
+            <div class="icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div><!--toggle icon-->
+
+        </nav> <!--center-->
 
     </header>
+    <div class="slider">
+        <div class="myslider fade" style="display: block;">
+            <img src ="images/image1.jpg" style: 100%; height: 50%>
+        </div>
+        <div class="myslider fade">
+            <img src ="images/image2.png" style: 100%; height: 100%>
+        </div>
+        <div class="myslider fade">
+            <img src ="images/image3.jpg" style: 100%; height: 100%>
+        </div>
+        <div class="myslider fade">
+            <img src ="images/image4.jpg" style: 100%; height: 100%>
+        </div>
+        <div class="myslider fade">
+            <img src ="images/image5.jpg" style: 100%; height: 100%>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <div class="dotsbox" style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
+    <script src="responsive-navbar.js"></script>
+    <script src="responsive-carousel.js"></script>
 
 </body>
 

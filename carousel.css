@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.slider {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.myslider {
+    height: 655px;
+    display: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: #f0dc2a;
+    transition: 0.1s;
+    user-select:none;
+}
+
+.prev:hover, .next:hover {
+    color:#f0dc2a
+}
+
+.next{
+    right: 0;
+}
+
+.dotsbox {
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #f0dc2a;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.active, .dot:hover{
+    border-color: #232323;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from{opacity:0.8}
+    to{opacity: 1;}
+}
+
+@keyframes fade {
+    from{opacity:0.8}
+    to{opacity: 1;}
+}
+
+.myslider img {
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin {
+    from {transform: scale(1, 1);}
+    to {transform:scale(1.5, 1.5);}
+}
+
+@keyframes zoomin {
+    from {transform: scale(1, 1);}
+    to {transform:scale(1.5, 1.5);}
+}
+
+@media screen and (max-widht: 800px) {
+    .myslider{
+        height: 500px;
+    }
+}
+
+
